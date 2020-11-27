@@ -1,0 +1,57 @@
+body {
+  font-family: 'Nerko One', cursive;
+}
+.delete svg {
+  fill: red;
+  cursor: pointer;
+}
+.edit svg {
+  fill: blue;
+  cursor: pointer;
+}
+.todoActualTxt {
+  font-size: 1.5rem;
+  color: rgb(255, 123, 0);
+  font-weight: bolder;
+  letter-spacing: 3px;
+  word-break: break-all;
+}
+.fixedTypewritter {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  background: #af00ff;
+  z-index: 100;
+}
+.spiner__waiting {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 100%;
+  background: #b005ff34;
+  z-index: 100;
+  text-align: center;
+  font-size: 5rem;
+}
+.noTodo {
+  display: none;
+}
+.todo__list {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 576px) {
+  .todoActualTxt {
+    font-size: 1rem;
+    color: rgb(255, 123, 0);
+    font-weight: bolder;
+    letter-spacing: 3px;
+    word-break: break-all;
+  }
+}
